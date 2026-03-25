@@ -1,81 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kidung Jemaat - Haleluya! Pujilah!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kidung Jemaat - Playlist</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f5f5f5;
+}
 
-    .player {
-      background: white;
-      padding: 20px;
-      border-radius: 20px;
-      width: 90%;
-      max-width: 400px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      text-align: center;
-    }
+.container {
+  max-width:420px;
+  margin:auto;
+  padding:10px 8px;
+}
 
-    .cover {
-      width: 100%;
-      height: 200px;
-      border-radius: 15px;
-      background: url('https://via.placeholder.com/400x200?text=Kidung+Jemaat') center/cover;
-      margin-bottom: 15px;
-    }
+.header {
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
 
-    .title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
+.item {
+  background:#ffffff;
+  padding:6px 8px;
+  margin-bottom:8px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.12);
+  text-align:center;
+}
 
-    .subtitle {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 15px;
-    }
+.title {
+  font-size:16px;
+  font-weight:bold;
+  margin-bottom:4px;
+  line-height:1.2;
+}
 
-    audio {
-      width: 100%;
-      outline: none;
-    }
+.subtitle {
+  font-size:12px;
+  color:#777;
+  margin-bottom:6px;
+}
 
-    .footer {
-      margin-top: 10px;
-      font-size: 12px;
-      color: #888;
-    }
-  </style>
+audio {
+  width:100%;
+  height:26px;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="player">
-    
-    <div class="cover"></div>
+<div class="container">
 
+  <div class="header">🎧 Kidung Jemaat</div>
+
+  <!-- 001 -->
+  <div class="item">
     <div class="title">001. Haleluya! Pujilah!</div>
     <div class="subtitle">Kidung Jemaat</div>
-
     <audio controls>
       <source src="https://raw.githubusercontent.com/KidungJemaat/KidungJemaat/main/001.%20Haleluya!%20Pujilah!.mp3" type="audio/mpeg">
-      Browser tidak mendukung audio.
     </audio>
-
-    <div class="footer">© Kidung Jemaat</div>
-
   </div>
+
+  <!-- 002 -->
+  <div class="item">
+    <div class="title">002. Suci, Suci, Suci</div>
+    <div class="subtitle">Kidung Jemaat</div>
+    <audio controls>
+      <source src="https://raw.githubusercontent.com/KidungJemaat/KidungJemaat/main/002.%20Suci%2C%20Suci%2C%20Suci.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- 003 -->
+  <div class="item">
+    <div class="title">003. Kami Puji Dengan Riang</div>
+    <div class="subtitle">Kidung Jemaat</div>
+    <audio controls>
+      <source src="https://raw.githubusercontent.com/KidungJemaat/KidungJemaat/main/003.%20Kami%20Puji%20Dengan%20Riang.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- TAMBAH LAGU DI SINI -->
+
+</div>
 
 </body>
 </html>
